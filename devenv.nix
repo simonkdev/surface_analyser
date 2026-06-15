@@ -5,11 +5,22 @@
   env.GREET = "devenv";
 
   # https://devenv.sh/packages/
-  packages = [ pkgs.git ];
+  packages = [
+    pkgs.git
+    pkgs.zlib
+    pkgs.expat
+    pkgs.stdenv.cc.cc.lib
+  ];
 
   # https://devenv.sh/languages/
- languages.python = {
+  languages.python = {
     enable = true;
+    libraries = [
+      "${config.devenv.dotfile}/profile"
+      "${pkgs.zlib}/lib"
+      "${pkgs.expat}/lib"
+      "${pkgs.stdenv.cc.cc.lib}/lib"
+    ];
     venv.enable = true;
     venv.requirements = ''
        cython
@@ -21,8 +32,9 @@
        numpy
        notebook
        voila
+       tqdm
     '';
- };
+  };
   # https://devenv.sh/processes/
   # processes.cargo-watch.exec = "cargo-watch";
 
