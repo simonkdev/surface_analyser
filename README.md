@@ -97,14 +97,7 @@ Or use Voila for web deployment:
 voila interactive_landcover_map.ipynb
 ```
 
-# Process data with main script
-python main.py
-
-# Merge additional maps
-python map_merge.py
-
-
-# 📁 Project Structure
+## 📁 Project Structure
 
 ```text
 surface_analyser/
@@ -120,6 +113,6 @@ surface_analyser/
 └── .envrc                           # Direnv configuration
 ```
 
-# 📜 License
+## 📜 License
 This project is licensed under the MIT License.
 Copyright (c) 2026 Simon Korten
