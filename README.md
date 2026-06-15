@@ -65,7 +65,7 @@ The ESA WorldCover 2020 dataset includes:
 ```
 surface_analyser/
 └── data/
-└── raw/          # Place ESA WorldCover tiles here
+|   └── raw/          # Place ESA WorldCover tiles here
 ```
 
 4. **Merge maps**:
