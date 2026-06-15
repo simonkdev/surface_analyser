@@ -104,10 +104,9 @@ python main.py
 python map_merge.py
 
 
-📁 Project Structure
+# 📁 Project Structure
 
 ```text
-
 surface_analyser/
 ├── interactive_landcover_map.ipynb  # Main analysis notebook
 ├── main.py                          # Core processing script
@@ -121,6 +120,6 @@ surface_analyser/
 └── .envrc                           # Direnv configuration
 ```
 
-📜 License
+# 📜 License
 This project is licensed under the MIT License.
 Copyright (c) 2026 Simon Korten
